@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;color:#000;}
+img{border:0;vertical-align:top;}
+
+body{font-family:'Georgia', '돋움', '맑은고딕'; min-width:1200px; }
+
+.container{width:1200px;margin:0 auto;}
+.title{
+	padding-top:100px;color:#86603d;text-align:center;
+	font:normal 50px/60px georgia,Malgun Gothic,Dotum,Arial,verdana,Helvetica;}
+.conText{
+	text-align: center;color:#65676a;
+	font:300 15px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;margin-top:30px;
+}
+.page-header{width:100%;height:97px;position:absolute;z-index:100;padding-top:30px;padding-bottom:20px;box-sizing:border-box;background-color:transparent;}
+.page-header .container{height:73px;border-bottom:2px solid #fff;}
+.page-header h1{float:left;margin-top:10px;}
+.page-header ul{overflow:hidden;float:right;}
+.page-header ul li{float:left;margin-right:50px;}
+.page-header ul li a{display:inline-block;margin-top:5px;color:#fff;font: normal 18px/28px 'Georgia', '돋움', '맑은고딕';text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+.page-header ul li a:hover{text-decoration:underline;}
+.page-header #language{float:right;box-sizing:border-box;border:1px solid #fff;color:#fff;}
+.page-header #language a{display:inline-block;color:#fff;font:normal 15px/25px Georgia, '돋움', '맑은고딕';padding: 5px 10px 5px 30px;background:url(../images/lang02.png) no-repeat 10px 50%;transition:all 0.5s;}
+.page-header #language a:hover{color:#999;background:#fff url(../images/lang.png) no-repeat 10px 50%;}
+
+/* sticky header design */
+.page-header-clone{
+	width:100%;height:100px;
+	position:fixed;top:-100px;z-index:100; 
+	background-color:#fff;min-width:1300px;
+	padding-top:30px;padding-bottom:20px;
+	box-sizing:border-box;opacity:0;transition:opacity 0.5s;
+}
+/* 스크롤 내리면 클래스 추가하기 */
+.page-header-clone.visible{top:0;opacity:1;}
+
+.page-header-clone .container{height:100px;border-bottom:0;}
+.page-header-clone h1{float:left;margin-top:10px;}
+.page-header-clone ul{overflow:hidden;float:right;}
+.page-header-clone ul li{float:left;margin-right:50px;}
+.page-header-clone ul li a{display:inline-block;margin-top:5px;color:#999;font: normal 18px/28px Georgia, '돋움', '맑은고딕';}
+.page-header-clone ul li a:hover{color:#908373;text-decoration:underline;}
+.page-header-clone #language{float:right;box-sizing:border-box;color:#999;}
+.page-header-clone #language a{display:inline-block;color:#999;border:1px solid #ddd;font:normal 15px/25px Georgia, '돋움', '맑은고딕';padding: 5px 10px 5px 30px;background:url(../images/lang.png) no-repeat 10px 50%;transition:all 0.5s;}
+.page-header-clone #language a:hover{color:#fff;background:#999 url(../images/lang02.png) no-repeat 10px 50%;border:1px solid #999;}
+.page-header-clone ul li.on a{color:#908373;text-decoration:underline;}
+
+
+/*mainVisual*/
+#mainVisual{width:100%;height:100vh;background:url(../images/visual04.jpg);background-position:center;position:relative;top:0;}
+#mainText{position:absolute;top:35%;}
+#mainText h2{color:#fff;font:normal 58px/58px Georgia, '돋움', '맑은고딕';margin-top:30px;text-shadow: 3px 4px 6px rgba(54,48,47,0.5);letter-spacing:1px}
+#mainText h3{color:#fff;margin-top:10px;font:normal 36px/36px "나눔명조",Malgun Gothic, Dotum, Arial, verdana, Helvetica;}
+#mainText p{color:#fff;margin-top:40px;padding-top:30px;text-shadow:1px 1px 2px rgba(0,0,0,0.5);font:400 18px/28px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;}
+#scroll{position:absolute;bottom:111px;left:50%;cursor:pointer;}
+
+/*Accommodation*/
+#accom{padding-top:30px;}
+#accom h2{
+	padding-top:100px;color:#928373;text-align:center;
+	font:normal 50px/60px georgia,Malgun Gothic,Dotum,Arial,verdana,Helvetica;
+}
+
+.info_text{text-align:center;margin-top:40px;}
+
+ul.contents{overflow:hidden;margin-top:50px;padding-bottom:100px;}
+ul.contents li{float:left;display:table;}
+.roomImg{width:600px;height:450px;position:relative;}
+.viewBox{position:absolute;left:25px;bottom:25px;z-index:10;display:inline-block;padding:9px 15px;color:#fff;background-color:rgba(0,0,0,0.5);font: normal 14px/23px georgia,Malgun Gothic, Dotum, Arial, verdana, Helvetica;}
+.leftImg:after{content:"";width:34px;height:40px;position:absolute;background:url(../images/img_bg.png)no-repeat;top:50%;right:0;margin-top:-20px;}
+.rightImg:after{content:"";width:34px;height:40px;position:absolute;background:url(../images/img_bg02.png)no-repeat;top:50%;left:0;margin-top:-20px;}
+.roomInfo{width:600px;height:450px;padding:30px;box-sizing:border-box;text-align:center;display:table-cell;vertical-align:middle;}
+.roomInfo .rtxt01{padding-bottom:20px;margin-bottom:20px;background:url(../images/img_bar.png)no-repeat 50% 100%;font: normal 36px/46px georgia,Malgun Gothic, Dotum, Arial, verdana, Helvetica;color: #555;}
+.roomInfo .rtxt02{color:#666;font: 400 16px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;}
+.roomInfo .rtxt03{color:#999;font: 400 15px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;margin-top:30px;}
+.roomInfo .rbtn{display:inline-block; text-align:left; position:relative;transition: all 0.5s; border:1px solid #a49077; background:#a49077 url('../images/btn_bg.png')no-repeat 90% 50%;margin-top:45px;}
+.roomInfo .rbtn a{display:inline-block;width:160px; box-sizing:border-box; padding:12px 20px; position:relative; z-index:3;transition: all 0.5s; font:400 16px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica; color:#fff}
+.roomInfo .rbtn:before{content:''; width:0%; height:100%; background-color:#fff; position:absolute; border-radius:3px; left:0px; top:0px; z-index:3;-webkit-transition: all 0.5s; transition: all 0.5s; }
+.roomInfo .rbtn:after{content:''; position:absolute; top:18px; right:14px; width:8px; height:14px; display:inline-block; background:url('../images/btn_bg02.png')no-repeat 0% 0%; z-index:5; opacity:0; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.roomInfo .rbtn:hover{background: #fff url(../images/btn_bg02.png)no-repeat 90% 50%;}
+.roomInfo .rbtn:hover a{color:#928373;}
+.roomInfo .rbtn:hover:before {width:100%;}
+.roomInfo .rbtn:hover:after{opacity:1;}
+
+/*Restaurant*/
+#restaurant{padding-top:80px;padding-bottom:220px;}
+#restList{margin-top:80px;overflow:hidden;}
+.rest{width:574px;height:276px;color:#fff;margin:0 7px;box-sizing:border-box;padding:52px;position:relative;}
+.rest span{font-size:15px;color: rgba(255,255,255,0.5);margin-left:12px;position:absolute;top:66px;}
+.rest .restText{margin-top:10px;font: 300 15px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;padding-bottom:20px;margin-bottom: 20px;border-bottom:1px solid rgba(255,255,255,0.2);margin-top:28px;}
+.rest #restText02{margin-top:24px;}
+.rest ul{overflow:hidden;}
+.rest ul li{float:left;padding-left:10px;margin-right:60px;font: 300 15px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;background:url(../images/dot_bg.png)no-repeat 0 10px;}
+#rest01{float:left;background-color:#6d6863;border:2px solid #6d6863;transition:all 0.5s;}
+#rest01:hover,#rest02:hover{background:rgba(164,144,119,0.93);border:2px solid #a49077;}
+#rest02{float:right;background-color:#778889;border:2px solid #778889;transition:all 0.5s;}
+
+
+/*Meeting & Event*/
+#meetEvent{padding-top:60px;padding-bottom:200px;}
+#eventHall ul{overflow:hidden;margin-top:80px;}
+#eventHall ul li{float:left;width:380px;height:390px;box-sizing:border-box;
+border:2px solid #ddd;padding:50px;position:relative;transition:all 0.5s;}
+#eventHall ul li:nth-child(2){margin:0 30px;}
+.hallTitle{font:normal 25px/35px georgia, "Nanum Myeongjo", Malgun Gothic, Dotum, Arial, verdana, Helvetica;color:rgba(51,51,51,0.7);}
+.hallTitle span{font:bold 25px/35px "Nanum Myeongjo", Malgun Gothic, Dotum, Arial, verdana, Helvetica;}
+.hallSize{font: bold 15px/26px "Nanum Myeongjo",Malgun Gothic, Dotum, Arial, verdana, Helvetica;color:rgba(51,51,51,0.6);}
+.hallInfo{margin-top: 15px;padding-top: 15px;word-break: keep-all;color:#878a8d;
+    font: 300 15px/25px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;background: url(../images/text_bar.png)no-repeat 0 0;}
+.infoWrap{overflow:hidden;position:absolute;bottom:45px;}
+.infoWrap span{float:left;margin-right:30px;padding-left:10px;font: 300 15px/26px "NanumBarunGothic",Malgun Gothic, Dotum, Arial, verdana, Helvetica;
+    background: url(../images/dot_bg02.png)no-repeat 0 10px;color:#878a8d;}
+
+#eventHall ul li:hover{background-color:rgba(164,144,119,0.93);border:2px solid #a49077;color:rgba(255,255,255,0.87);}
+#eventHall ul li:hover .hallTitle{color:rgba(255,255,255,1);}
+#eventHall ul li:hover .hallSize{color:#ddcebc;}
+#eventHall ul li:hover .hallInfo{color:rgba(255,255,255,0.87);background: url(../images/text_bar02.png)no-repeat 0 0;}
+#eventHall ul li:hover .infoWrap span{color:rgba(255,255,255,0.87);background: url(../images/dot_bg.png)no-repeat 0 10px;}
+
+/*lounge & facility*/
+#lounge{padding-top:90px;padding-bottom:230px;background-color:#424242;}
+#loungeList ul{overflow:hidden;margin-top:80px;}
+#loungeList ul li{float:left;width:380px;height:390px;box-sizing:border-box;background-color:#805a38;border:2px solid #805a38;color:#fff;position:relative;padding:52px;transition:all 0.5s;}
+#loungeList ul li:nth-child(2){margin:0 30px;}
+#loungeList .hallTitle{font:normal 25px/35px "Nanum Myeongjo", Malgun Gothic, Dotum, Arial, verdana, Helvetica;color:#b7b7b7;}
+#loungeList .hallSize{color:#b7b7b7;}
+#loungeList .lounge-txt{margin-top:15px;font: bold 14px/25px "Nanum Myeongjo",Malgun Gothic, Dotum, Arial, verdana, Helvetica;color:#b7b7b7;}
+#loungeList .hallInfo{color:#b7b7b7;}
+ #loungeList .infoWrap span{color:#b7b7b7;}
+
+#loungeList ul li:hover{background-color:rgba(164,144,119,0.93);border:2px solid #a49077;color:rgba(255,255,255,0.87);}
+#loungeList ul li:hover .hallTitle{color:rgba(255,255,255,1);}
+#loungeList ul li:hover .hallSize{color:rgba(255,255,255,0.87);}
+#loungeList ul li:hover .lounge-txt{color:#ddcebc;}
+#loungeList ul li:hover .hallInfo{background: url(../images/text_bar02.png)no-repeat 0 0;}
+#loungeList ul li:hover .infoWrap span{color:rgba(255,255,255,0.87);background: url(../images/dot_bg.png)no-repeat 0 10px;}
+/*footer*/
+footer{padding:70px 0;}
+.footerImg{text-align:center;}

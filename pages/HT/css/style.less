@@ -1,0 +1,384 @@
+@width:100%;
+@color:#d32f2f;
+@color2:#454545;
+@color3:#fff;
+
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#000;}
+img{border:0;vertical-align:top;}
+ul{list-style:none;}
+
+body{
+	font:16px/24px '나눔고딕',sans-serif;
+	color:#010101;min-width:1140px;
+}
+h2{font:36px '나눔바른고딕';text-align:center;}
+h3.title{
+	font:bold 18px/24px '나눔고딕';text-align:center;
+	margin-top:32px;
+}
+.info{
+	text-align:center;font:16px/21px '나눔고딕';
+	margin-top:16px;margin-bottom:40px;
+}
+.btn{
+	width:173px;margin:auto;height:52px;box-sizing:border-box;
+	border:2px solid @color;text-align:center;
+	color:@color;font:24px/56px 'Myriad Pro';transition:all 0.5s;
+}
+.btn:hover{
+	background-color:@color;color:@color3;
+	cursor:pointer
+}
+
+// less class
+.container(){
+	width:1140px;margin:auto;
+}
+.textEffect(){
+	text-shadow:3px 3px 7px rgba(0,0,0,0.35);
+}
+
+header{
+	width:@width;height:100px;
+	// position:fixed;
+	// background-color:@color3;z-index:100;
+	#header_wrap{
+		.container();
+		position:relative;
+	}
+	h1{
+		width:271px;background:url(../img/logo.png) no-repeat;
+		position:absolute;left:0;text-indent:-9999px;
+		margin-top:26px;
+		a{display:block;width:271px;height:100%;}
+	}
+	#main_menu{
+		float:right;overflow:hidden;
+		height:100%;
+		li{
+			float:left;margin-left:18px;
+			line-height:100px;
+			a{transition:all 0.3s;}
+		}
+		li a:hover{
+			color:@color;
+		}
+	}
+}
+nav{
+	width:@width;height:36px;
+	background-color:@color2;
+	//position:fixed;top:100px;
+	// z-index:100;
+	#nav_wrap{
+		.container();
+		#leftMenu{
+			width:50%;float:left;
+			padding-left:10px;
+			li{float:left;margin-right:8px;
+				a{
+					color:@color3;display:block;
+					font:12px/36px '나눔고딕';
+					padding-left:8px;
+					width:100%;
+				}
+				a:hover{background-color:#373737;}
+			}
+		}
+		#rightMenu{
+			float:right;padding-right:10px;
+			li{float:left;position:relative;
+				a{
+					color:@color3;display:block;
+					font:12px/36px '나눔고딕';
+					padding-left:8px;margin-right:8px;
+					height:36px;line-height:36px;
+					i{
+						font-size:24px;position:absolute;
+						left:8px;top:6px;
+					}
+					// i{font-size:24px;line-height:36px;margin-right:-10px;}
+				}
+			}
+			#user{
+				width:140px;text-align:right;
+				#subMenu{
+					position:absolute;top:36px;left:0;z-index:100;
+					height:180px;
+					li a{
+						display:block;color:#222;text-align:left;
+						background-color:@color3;width:132px;
+						display:none;
+					}
+					li a:hover{background-color:#464646;color:@color3;}
+				}
+			}
+			#user:hover{background-color:#c21a1a;}
+			#user:hover #subMenu>li>a{display:block;}
+		}
+	}
+}
+
+#mainVisual{
+	width:@width;height:650px;overflow:hidden;
+	// padding-top:136px;
+	#main01{
+		width:65%;height:566px;
+		float:left;overflow:hidden;
+		background-color:pink;
+		img{width:135%;}
+	}
+	#main02{
+		width:35%;height:325px;
+		float:right;overflow:hidden;
+		background-color:yellow;
+		img{width:100%;margin-top:-50px;}
+	}
+	#main03{
+		width:35%;height:325px;
+		float:right;overflow:hidden;
+		background-color:skyblue;
+		img{width:100%;}
+	}
+	#mainText{
+		.container();height:650px;position:relative;
+		#main-text1{
+			position:absolute;bottom:120px;left:0;color:@color3;
+			font-size:100px;font-family: 'Francois One', sans-serif;
+		}
+		#main-text2{
+			position:absolute;bottom:30px;left:0;
+			font-size:70px;font-family: 'Francois One', sans-serif;
+		}
+	}
+}
+
+#searchBox{
+	.container();height:121px;
+	margin-top:55px;border-bottom:11px solid @color;
+	background-color:@color2;box-sizing:border-box;
+	padding-top:32px;padding-left:33px;padding-right:33px;
+	input{
+		width:212px;height:49px;border:0;
+		padding-left:16px;box-sizing:border-box;
+		margin-right:10px;
+	}
+	input:nth-of-type(4){margin-right:0;}
+	button{
+		width:167px;height:49px;border:0;padding:0;
+		background-color:@color;color:@color3;float:right;
+		cursor:pointer;font-size:20px;
+	}
+}
+// 추천 여행지
+#contents1{
+	h2{margin-top:122px;}
+	ul{
+		.container();margin-top:32px;
+		overflow:hidden;
+		li{
+			float:left;width:352px;
+			margin-right:41px;position:relative;
+			a{
+				display:block;
+				width:353px;height:241px;
+				background-color:#000;
+			}
+			a:hover img{opacity:0.5;}
+			a:hover:after{display:block;}
+		}
+		a:after{
+			content:"CLICK";display:inline-block;
+			position:absolute;top:30%;left:50%;
+			transform:translateX(-50%);
+			z-index:10;color:@color3;
+			font:24px 'Myriad Pro';display:none;
+		}
+	}
+	ul li:nth-child(3n){margin-right:0;}
+}
+
+#contents2{
+
+	h2{margin-top:128px;}
+	ul{
+		width:@width;margin-top:28px;overflow:hidden;
+		background-color:#ddd;
+	}
+	ul li{
+		width:20%;height:598px;
+		float:left;background-color:#000;
+		position:relative;overflow:hidden;
+		img{opacity:0.5;}
+		h3{
+			position:absolute;bottom:70px;
+			color:@color3;font:45px '나눔바른고딕';
+			margin-left:30px;
+		}
+		p{
+			position:absolute;bottom:20px;
+			color:@color3;font:16px/24px '나눔고딕';
+			margin-left:30px;
+		}
+	}
+}
+
+//호텔 미리보기 - 갤러리
+#contents3{
+	.container();
+	h2{margin-top:130px;}
+	h2:after{
+		content:"";
+		display:block;width:50px;height:2px;
+		background-color:@color;margin:20px auto;
+	}
+	p#subText{font:30px/48px '나눔바른고딕';text-align:center}
+	#gallery{
+		.container();height:556px;position:relative;
+		margin-top:72px;
+	}
+	h3.title{
+		text-align:left;margin-top:14px;
+	}
+	p.info{
+		text-align:left;margin-top:0;
+	}
+	.thumbs a{
+	 	display:block;overflow:hidden;
+	 	width:242px;height:162px;background-color:orange;
+	 	transition:all 0.1s;
+	}
+	.thumbs a:hover{outline:5px solid #464646;}
+	.thumbs{width:242px;position:absolute;}
+	#th01{top:0;left:0;}
+	#th02{bottom:0;left:0;margin-top:10px;}
+	#th03{top:0;right:0;}
+	#th04{bottom:0;right:0;}
+	#big{width:580px;margin:auto;}
+	#big a{
+		display:block;width:580px;height:438px;
+		margin:auto;background-color:#ddd;
+	}
+}
+
+// 인기 해변 도시
+#contents4{
+	width:@width;height:554px;
+	background-color:#ddd;
+	margin-top:94px;
+	background:url(../img/popular-bg.png) no-repeat;
+	background-size:100%;
+	background-position:center bottom;
+	transition:all 0.5s;
+	#con_wrap{
+		.container();	
+	}
+	#text_wrap{
+		width:50%;float:right;box-sizing:border-box;
+		padding-left:76px;padding-top:160px;
+		h2{
+			text-align:left;color:@color3;
+			font:40px/80px 'MV Boli';
+			.textEffect();
+		}
+		h3{
+			color:@color3;line-height:1;
+			font:72px/38px 'MV Boli';
+			.textEffect();
+		}
+		p{
+			font:16px/24px '나눔고딕';
+			color:@color3;margin-top:58px;
+		}
+		.btn{
+			margin:0;background-color:@color;
+			color:@color3;border:2px solid @color;margin-top:56px;
+			transition:all 0.5s;
+		}
+		.btn:hover{background-color:#bc1f1f;}
+	}
+}
+
+// 추천 유럽 도시
+#contents5{
+	h2{
+		margin-top:144px;
+		overflow:hidden;
+	}
+	ul{
+		.container();overflow:hidden;
+		margin-top:80px;
+		li{
+			float:left;width:352px;
+			margin-right:42px;
+			a{
+				display:block;
+				width:352px;height:362px;
+				background-color:#ddd;overflow:hidden;
+			}
+			a:hover img{
+				transform:scale(1.2);
+				transition:all 0.5s;
+			}
+		}
+	}
+	ul li:last-child{margin-right:0;}
+	h3.title{
+		text-align:left;margin-top:14px;
+	}
+	p.info{
+		text-align:left;margin-top:10px;
+		margin-bottom:54px;
+	}
+
+}
+
+footer{
+	width:@width;height:320px;margin-top:73px;
+	background-color:#252525;color:@color3;
+	box-sizing:border-box;position:relative;
+	#footer_wrap{
+		.container();padding-top:56px;
+		address{
+			position:absolute;font-style:normal;
+			bottom:26px;left:50%;transform:translateX(-50%);
+			font-size:14px;
+		}
+	}
+	#fLeft{
+		width:30%;float:left;
+		p{
+			line-height:34px;
+			img{margin-bottom:14px;}
+			span{display:inline-block;width:20px;text-align:center;}
+			.icon{margin-right:10px;}
+		}
+	}
+	#fCenter{
+		width:45%;float:left;
+		ul{overflow:hidden;padding-top:46px;padding-left:30px;}
+		li{float:left;width:33%;height:30px;}
+		li:last-child{width:66%;}
+		li a{
+			color:#fff;font:14px/22px '나눔고딕';
+			display:inline-block;
+		}
+	}
+	#fRight{
+		width:25%;float:right;padding-top:46px;
+		p{float:right;}
+		ul{
+			float:right;margin-top:20px;
+			li{
+				float:left;width:36px;height:36px;
+				border:1px solid #333;
+				text-align:center;margin-left:10px;
+				i{
+					color:@color3;
+					font-size:21px;line-height:36px;
+				}
+			}
+		}
+	}
+}
