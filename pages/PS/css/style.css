@@ -33,13 +33,14 @@ img{border:0;vertical-align:top;}
 /*header-logomenu*/
 #header #logo_menu{width:1200px;margin:0 auto;height:138px;padding-top:34px;box-sizing:border-box;}
 #header #logo_menu h1{float:left;}
-#header #logo_menu #r_wrap{width:300px;height:80px;overflow:hidden;float:right;}
+#header #logo_menu #r_wrap{width:auto;height:80px;overflow:hidden;float:right;}
+#header #logo_menu #top_menu2{overflow:hidden;}
 #header #logo_menu #top_menu2 ul{float:right;}
 #header #logo_menu #top_menu2 ul li{float:left;}
 #header #logo_menu #top_menu2 ul li a{font-size:12px;margin-left:14px;}
 #header #logo_menu #top_menu2 ul li a:hover{color:#c58c56;}
 /*search_bar*/
-#header #logo_menu #search{border-radius:17px;border:2px solid #ff9d9e;width:277px;height:30px;float:right;margin-right:-295px;margin-top:30px;}
+#header #logo_menu #search{border-radius:17px;border:2px solid #ff9d9e;width:277px;height:30px;float:right;margin-top:20px;}
 #header #logo_menu #search input{outline:none;border:0;width:220px;height:25px;margin-left:10px;margin-top:2px;}
 #header #logo_menu #search button{cursor:pointer;outline:none;float:right;margin-right:10px;margin-top:5px;border:0;background-color:rgba(255,255,255,0);}
 /*main_menu*/

@@ -93,7 +93,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #bestSeller p img{margin-top:27px;}
 #bestSeller h2{text-align:center;margin-top:20px;font:bold 21px/30px arial;color:#1a3966;}
 #bestSeller h3{font:bold 30px/36px '나눔스퀘어';margin-left:42px;color:#45371e;margin-bottom:42px;}
-#bestSeller span a{display:block;font:21px '나눔스퀘어';color:#45371e;border:1px solid #45371e;width:158px;height:43px;padding:10px 30px;box-sizing:border-box;margin-left:42px;transition:all 0.5s;}
+#bestSeller span a{display:block;font:21px/41px '나눔스퀘어';color:#45371e;border:1px solid #45371e;width:158px;height:43px;box-sizing:border-box;margin-left:42px;transition:all 0.5s;text-align:center;}
 #bestSeller span a:hover{background-color:#45371e;color:#fff;}
 #bestSeller #bg_img{position:absolute;right:0;bottom:0;}
 

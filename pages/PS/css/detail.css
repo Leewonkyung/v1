@@ -33,13 +33,14 @@ img{border:0;vertical-align:top;}
 /*header-logomenu*/
 #header #logo_menu{width:1200px;margin:0 auto;height:138px;padding-top:34px;box-sizing:border-box;}
 #header #logo_menu h1{float:left;}
-#header #logo_menu #r_wrap{width:300px;height:80px;overflow:hidden;float:right;}
+#header #logo_menu #r_wrap{width:auto;height:80px;overflow:hidden;float:right;}
+#header #logo_menu #top_menu2{overflow:hidden;}
 #header #logo_menu #top_menu2 ul{float:right;}
 #header #logo_menu #top_menu2 ul li{float:left;}
 #header #logo_menu #top_menu2 ul li a{font-size:12px;margin-left:14px;}
 #header #logo_menu #top_menu2 ul li a:hover{color:#c58c56;}
 /*search_bar*/
-#header #logo_menu #search{border-radius:17px;border:2px solid #ff9d9e;width:277px;height:30px;float:right;margin-right:-295px;margin-top:30px;}
+#header #logo_menu #search{border-radius:17px;border:2px solid #ff9d9e;width:277px;height:30px;float:right;margin-top:20px;}
 #header #logo_menu #search input{outline:none;border:0;width:220px;height:25px;margin-left:10px;margin-top:2px;}
 #header #logo_menu #search button{cursor:pointer;outline:none;float:right;margin-right:10px;margin-top:5px;border:0;background-color:rgba(255,255,255,0);}
 /*main_menu*/
@@ -124,10 +125,10 @@ img{border:0;vertical-align:top;}
 /*배송정보*/
 #container #del_info{position:relative;overflow:hidden;height:566px;margin-top:42px;border:1px solid #cdcdcd;box-sizing:border-box;}
 #del_info #info1{width:480px;height:200px;position:absolute;top:21px;left:12px;}
-#del_info #info2{width:480px;height:300px;position:absolute;top:236px;left:12px;}
-#del_info #info3{width:480px;height:400px;position:absolute;top:21px;left:532px;}
+#del_info #info2{width:480px;height:300px;position:absolute;top:210px;left:12px;}
+#del_info #info3{width:480px;height:400px;position:absolute;top:21px;left:520px;}
 #del_info h3{font:bold 12px/30px '나눔고딕';color:#ff5c5c;}
-#del_info p{font:12px/16px '나눔고딕';margin-bottom:21px;}
+#del_info p{font:12px/18px '나눔고딕';margin-bottom:15px;letter-spacing:-0.5px;}
 #del_info p span{display:block;width:480px;font-weight:bold;}
 /*review*/
 #container #review{height:260px;margin-bottom:120px;}
@@ -145,7 +146,7 @@ img{border:0;vertical-align:top;}
 /*review버튼*/
 #review #review_btn ul{overflow:hidden;float:right;margin-top:12px;}
 #review #review_btn ul li{float:left;margin-left:15px;}
-#review #review_btn ul li a{display:block;width:96px;height:28px;border:1px solid #cdcdcd;font:12px/28px '나눔고딕';box-sizing:border-box;border-radius:3px;text-align:center;}
+#review #review_btn ul li a{display:block;width:96px;height:28px;border:1px solid #cdcdcd;font:12px/26px '나눔고딕';box-sizing:border-box;border-radius:3px;text-align:center;}
 #review #review_btn ul li a:hover{background-color:rgba(204,204,204,0.5);}
 /*footer*/
 #footer{width:100%;height:280px;background-color:#ccc;}
