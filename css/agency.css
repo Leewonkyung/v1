@@ -199,6 +199,7 @@ section h3.section-subheading span{color:#fff;}
   width:100%;height:120%;
   position:relative;
   z-index:20;
+  pointer-events: none;
 }
 #timelineBox ul li:after{
   content:"";display:inline-block;
@@ -755,6 +756,10 @@ header.masthead .intro-text a{
 .portfolio>.container>.row{display:flex;}
 .contents1{order:2;}
 .contents2{order:1;}
+.container{overflow-x:hidden;}
+.top-text{width:auto;text-align:center;padding-left:0;}
+.main-text img{margin-left:0;}
+p.large.text-muted{padding:0 35px;}
 }
 
 @media (min-width: 768px) {
