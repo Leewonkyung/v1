@@ -62,22 +62,27 @@ img{border:0;vertical-align:top;}
 #mainVisual{width:1200px;height:480px;margin:0 auto;clear:both;}
 /*container*/
 .wrap{width:1200px;margin:0 auto;}
-.photo{width:377px;height:316px;background-color:#000;position:relative;}
+.photo{width:377px;height:auto;position:relative;}
 .photoBox{overflow:hidden;}
 /*a.photoBox{border:1px solid red;width:377px;height:316px;overflow:hidden;}*/
 a:hover .photoBox{opacity:0.7;}
 .photo span{display:block;position:absolute;z-index:1;
     top:158px;left:138px;width:90px;height:20px;text-align:center;line-height:20px;
     border:1px solid #fff;color:#fff;display:none;}
+.photo a{display: inline-block; width: 377px; height: 316px;background-color:#000; overflow:hidden;}
+.photo a img{ transition: all .3s;}
+.photo a:hover img{transform: scale(1.2);}
 .photo a:hover span{display:block;}
 .photo a:hover span:hover{background-color:#fff;color:#666;font-weight:bold;}
 /*a:hover img.photoBox{}*/
+#container h2{padding-left:10px; margin-bottom: 15px; border-left: 3px solid #ff9d9e; font-weight: bold; line-height: 1;}
+#container ul{overflow: hidden;}
 #container ul li:nth-child(2){margin-left:34px;margin-right:35px;}
 #container ul li{float:left;}
-#container .title{font:bold 14px/42px '나눔바른고딕';text-align:center;}
+#container .title{font:bold 16px/32px '나눔바른고딕';text-align:center;}
 #container .price{font-size:14px;line-height:21px;text-align:center;color:#c18243;font-weight:bold;}
 /*best_item*/
-#container #con_best{height:483px;margin-top:56px;}
+#container #con_best{padding:40px 0;height:auto;margin:50px 0;background:#fff6f6;}
 #container #con_main{height:483px;}
 /*set_item*/
 #container #con_set{height:400px;position:relative;overflow:hidden;}
@@ -90,9 +95,8 @@ a:hover .photoBox{opacity:0.7;}
 #container #nav a{display:inline-block;width:15px;height:15px;border-radius:15px;border:2px solid #c18243;box-sizing:border-box;text-indent:-9999px;}
 #container #nav a.on{display:inline-block;width:15px;height:15px;border-radius:15px;background-color:#c18243;text-indent:-9999px;}
 /*popular_item*/
-#container #con_pop{height:483px;margin-top:56px;clear:both;}
+#container #con_pop{height:auto;margin:50px 0;padding:40px 0;background:#f7f7f7;clear:both;}
 #container #con_pop ul{overflow:hidden;}
-#container #set01{position:;}
 /*event_item*/
 #container #con_event{height:400px;overflow:hidden;}
 #container #con_event #ev01{width:788px;height:400px;background-color:#c18243;float:left;margin-right:35px;}

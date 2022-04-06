@@ -1,8 +1,10 @@
 $(function(){
 	$('.slider').bxSlider({
+        auto: true,
+        speed: 500,
         mode: 'fade',
         captions: true,
-        slideWidth: 1200
+        slideWidth: 1200,        
       });
 
 	var visual = $('#con_set > ul > li');
