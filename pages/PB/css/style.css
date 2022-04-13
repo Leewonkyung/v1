@@ -7,7 +7,7 @@ img{border:0;vertical-align:top;max-width:100%;}
 
 html,body{width:100%;min-height:100%;}/*반응형에서 꼭 적어줘야함*/
 
-body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
+body{font-family: 'Noto Sans KR', '맑은고딕', '나눔고딕', sans-serif; font-size:14px; line-height: 1.3; color:#353535;}
 
 /* PC - 1200px */
 /*header*/
@@ -46,56 +46,60 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #next{position:absolute;right:-150px;top:50%;margin-top:-40px;}
 
 /*pb_menu*/
-#pb_menu{width:100%;height:418px;background-color:#e4e4e4;margin-top:32px;box-sizing:border-box;}
+#pb_menu{width:100%;height:418px;background-color:#f8f8f8;margin-top:32px;box-sizing:border-box;}
 #pb_menu #pMenu_wrap{width:1200px;height:418px;margin:0 auto;}
 #pb_menu p{text-align:center;}
 #pb_menu p img{margin-top:27px;}
-#pb_menu h2{text-align:center;margin-top:20px;font:bold 21px/30px arial;color:#1a3966;}
+#pb_menu h2{text-align:center;margin-top:20px;font:bold 26px/30px 'Noto Sans KR';color:#1a3966;}
 #pb_menu ul{width:1200px;margin:0 auto;overflow:hidden;margin-top:24px;}
-#pb_menu ul li{width:230px;height:250px;float:left;background-color:#fff;border:1px solid #005298;box-sizing:border-box;margin-right:12px;overflow:hidden;}
-#pb_menu ul li a{display:block;font:18px/50px arial;text-align:center;color:#1a3966;}
+#pb_menu ul li{width:230px;height:250px;float:left;border-radius:10px;background-color:#fff;border:1px solid #005298;box-sizing:border-box;margin-right:12px;margin-bottom:15px;overflow:hidden;}
+#pb_menu ul li:hover{box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);}
+#pb_menu ul li:hover a{font-weight: bold;}
+#pb_menu ul li a{display:block;font-size: 18px;line-height:50px;text-align:center;color:#1a3966;}
 #pb_menu ul li a img{transition:all 0.3s;}
 #pb_menu ul li a img:hover{transform:scale(1.1);}
 #pb_menu ul li:last-child{margin-right:0;}
 #pb_menu .m_menu{display:none;}
 
 /*banner*/
-#banner{width:1200px;margin:0 auto;height:480px;margin-top:94px;}
-#banner #newItem{width:600px;height:100%;float:left;background:url(../images/newitem.jpg) no-repeat;}
-#banner #pb_cafe{width:600px;height:100%;float:right;background:url(../images/cafe.jpg) no-repeat;}
+#banner{width:1200px;margin:0 auto;height:auto;margin-top:60px;overflow:hidden;}
+#banner #newItem{width:600px;height:100%;float:left;}
+#banner #pb_cafe{width:600px;height:100%;float:right;}
 
 /*contents*/
-#contents{width:1200px;margin:0 auto;height:520px;margin-top:94px;}
+#contents{width:1200px;margin:0 auto;height:520px;margin-top:60px;}
 /*공지사항*/
-#contents h3{margin-left:20px;margin-top:20px;font:bold 18px '나눔스퀘어';color:#005298;}
+#contents h3{margin-left:20px;margin-top:15px;font:bold 22px 'Noto Sans KR';color:#005298;}
 #contents #news{width:590px;height:250px;background-color:#e8e8e8;float:left;border-left:10px solid #005298;box-sizing:border-box;}
-#contents #news ul{width:244px;margin-left:56px;margin-top:40px;float:left;}
+#contents #news ul{padding:30px;float:left;}
 #contents #news ul li a{font:14px/30px '나눔고딕';}
+#contents #news ul li a:hover{text-decoration: underline;}
 #contents #news p img{float:right;margin-top:6px;margin-right:50px;}
 /*카카오 플러스친구*/
 #contents #kakao{width:590px;height:250px;background-color:#e8e8e8;float:right;border-left:10px solid #005298;box-sizing:border-box;position:relative;}
 #contents #kakao p img{position:absolute;top:0;left:0;}
 /*경영주 모집*/
 #contents #franc{width:590px;height:250px;background:url(../images/francimg.jpg) no-repeat;float:left;margin-top:20px;}
-#contents #franc #title{font:bold 24px/30px '나눔스퀘어';color:#005298;margin:66px 0 26px 36px}
-#contents #franc #title span{color:#fff;background-color:#005298;padding:2px;}
-#contents #franc #ftext{font:18px/24px '나눔스퀘어';margin-left:36px;}
+#contents #franc #title{font:bold 24px/32px 'Noto Sans KR';color:#005298;margin:55px 0 26px 36px}
+#contents #franc #title span{color:#fff;background-color:#005298;padding:0 2px;}
+#contents #franc #ftext{font:18px/24px 'Noto Sans KR';margin-left:36px;}
 /*해피포인트*/
 #contents #point{width:590px;height:250px;background-color:#e8e8e8;float:right;margin-top:20px;padding-top:66px;box-sizing:border-box;}
 #contents #point p img{float:left;margin-left:58px;margin-top:20px;}
-#contents #point h4{font:14px/30px '나눔스퀘어';margin-left:315px;}
+#contents #point h4{font:14px/30px 'Noto Sans KR';margin-left:315px;}
 #contents #point h4 span{font-size:24px;color:#005298;font-weight:bold;}
 
 /*bestSeller*/
-#bestSeller{width:100%;height:300px;background-color:#f1e7dc;margin-top:74px;}
+#bestSeller{width:100%;height:300px;background:#f1e7dc url(../images/best_bg.jpg) no-repeat center center;margin-top:74px;}
 #bestSeller #best_wrap{width:1200px;height:100%;margin:0 auto;position:relative;}
 #bestSeller p{text-align:center;}
 #bestSeller p img{margin-top:27px;}
-#bestSeller h2{text-align:center;margin-top:20px;font:bold 21px/30px arial;color:#1a3966;}
-#bestSeller h3{font:bold 30px/36px '나눔스퀘어';margin-left:42px;color:#45371e;margin-bottom:42px;}
-#bestSeller span a{display:block;font:21px/41px '나눔스퀘어';color:#45371e;border:1px solid #45371e;width:158px;height:43px;box-sizing:border-box;margin-left:42px;transition:all 0.5s;text-align:center;}
+#bestSeller h2{text-align:center;margin-top:20px;font:bold 26px/30px 'Noto Sans KR';color:#1a3966;}
+#bestSeller h3{font:500 30px/36px 'Noto Sans KR';margin-left:42px;color:#45371e;margin-bottom:30px;}
+#bestSeller h3 strong{font-size:36px;font-weight: 800;}
+#bestSeller span a{display:block;font:21px/41px 'Noto Sans KR';color:#45371e;border:1px solid #45371e;width:158px;height:43px;box-sizing:border-box;margin-left:42px;transition:all 0.5s;text-align:center;}
 #bestSeller span a:hover{background-color:#45371e;color:#fff;}
-#bestSeller #bg_img{position:absolute;right:0;bottom:0;}
+#bestSeller #bg_img{position:absolute;right:0;bottom:10px;}
 
 /*sns*/
 #sns{width:1200px;margin:0 auto;height:164px;overflow:hidden;}
@@ -104,9 +108,11 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #sns ul li a{display:block;width:57px;height:57px;margin:0 19px;}
 
 /*insta_img*/
-#insta_img{width:1200px;margin:0 auto;height:200px;background-color:#aac295;overflow:hidden;}
+#insta_img{width:1200px;margin:0 auto;height:200px;overflow:hidden;}
 #insta_img ul li{float:left;}
-#insta_img ul li a{display:block;width:200px;height:200px;}
+#insta_img ul li a{display:block;width:200px;height:200px;overflow:hidden;}
+#insta_img ul li a img{transition:all 0.3s;opacity: 0.8;}
+#insta_img ul li a:hover img{transform:scale(1.1); opacity: 1;}
 
 /*footer*/
 #footer{width:100%;height:300px;background-color:#1a3966;margin-top:55px;}
@@ -182,7 +188,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #pb_menu p img{width:17.5%;margin-top:17px;}
 #pb_menu #pMenu_wrap h2{text-align:center;margin-top:10px;font:16px arial;color:#1a3966;}
 #pb_menu #pMenu_wrap ul{width:96.25%;margin:0 auto;overflow:hidden;margin-top:24px;}
-#pb_menu #pMenu_wrap ul li{width:19.22077922077922%;height:160px;float:left;background-color:#fff;border:1px solid #005298;box-sizing:border-box;margin-right:0.9%;}
+#pb_menu #pMenu_wrap ul li{width:19.22077922077922%;height:12em;float:left;background-color:#fff;border:1px solid #005298;box-sizing:border-box;margin-right:0.9%;}
 #pb_menu ul li a{display:block;font:12px/20px arial;text-align:center;color:#1a3966;}
 #pb_menu #pMenu_wrap ul li:last-child{margin-right:0;}
 #pb_menu .m_menu{display:none;}
@@ -194,12 +200,12 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #banner #newItem,#banner #pb_cafe{width:50%;height:100%;}
 
 /*contents*/
-#contents{width:96.5%;margin:0 auto;height:334px;margin-top:28px;/*background-color:pink;*/}
+#contents{width:96.5%;margin:0 auto;height:334px;margin-top:28px;}
 /*공지사항*/
-#contents h3{margin-left:13px;margin-top:12px;font:bold 14px '나눔스퀘어';color:#005298;}
+#contents h3{margin-left:13px;margin-top:12px;font:bold 14px 'Noto Sans KR';color:#005298;}
 #contents #news{width:49.22279792746114%;height:161px;background-color:#f2f2f2;float:left;border-left:6px solid #005298;box-sizing:border-box;}
 #contents #news ul{width:65%;height:70%;margin:0;float:left;padding-left:20px;padding-top:22px;box-sizing:border-box;overflow:hidden;}
-#contents #news ul li a{font:12px/20px '나눔고딕';}
+#contents #news ul li a{font:12px/20px '나눔고딕';height:20px;overflow:hidden;white-space: nowrap;}
 #contents #news p{width:35%;overflow:hidden;padding:0;margin:0;box-sizing:border-box;}
 #contents #news p img{width:106px;height:106px;margin:0;float:left;}
 /*카카오 플러스친구*/
@@ -207,7 +213,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #contents #kakao p img{position:absolute;top:0;left:0;}
 /*경영주 모집*/
 #contents #franc{width:49.22279792746114%;height:161px;background:url(../images/francimg.jpg) no-repeat;float:left;margin-top:12px;background-size:100% 100%;}
-#contents #franc #title{font:bold 16px/20px '나눔스퀘어';color:#005298;margin:66px 0 26px 36px}
+#contents #franc #title{font:bold 16px/24px 'Noto Sans KR';color:#005298;margin:50px 0 26px 36px}
 #contents #franc #title span{color:#fff;background-color:#005298;padding:2px;}
 #contents #franc #ftext{display:none;}
 /*해피포인트*/
@@ -215,7 +221,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #contents #point p{width:50%;height:100%;float:left;overflow:hidden;padding-left:36px;padding-top:52px;box-sizing:border-box;}
 #contents #point p img{width:136px;height:60px;margin-left:0px;margin-top:0px;}
 #contents #point #ptext{width:50%;float:right;padding-top:44px;padding-left:20px;box-sizing:border-box;}
-#contents #point h4{font:9px/20px '나눔스퀘어';margin-left:0px;float:left;}
+#contents #point h4{font:9px/20px 'Noto Sans KR';margin-left:0px;float:left;}
 #contents #point h4 span{font-size:16px;color:#005298;font-weight:bold;}
 
 
@@ -224,9 +230,9 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #bestSeller #best_wrap{width:100%;height:100%;margin:0 auto;position:relative;}
 #bestSeller #line{width:17.5%;margin:0 auto;margin-top:17px;}
 #bestSeller h2{text-align:center;margin-top:10px;font:16px arial;color:#1a3966;}
-#bestSeller h3{font:bold 20px/24px '나눔스퀘어';margin-left:36px;color:#45371e;margin-bottom:16px;}
-/*#bestSeller span{font:16px '나눔스퀘어';color:#45371e;border:1px solid #45371e;width:112px;height:28px;padding:8px 20px;box-sizing:border-box;margin-left:36px;}*/
-#bestSeller span a{display:block;font:16px '나눔스퀘어';color:#45371e;border:1px solid #45371e;width:115px;height:28px;padding:5px 20px;box-sizing:border-box;margin-left:36px;transition:all 0.5s;}
+#bestSeller h3{font:bold 20px/24px 'Noto Sans KR';margin-left:36px;color:#45371e;margin-bottom:16px;}
+/*#bestSeller span{font:16px 'Noto Sans KR';color:#45371e;border:1px solid #45371e;width:112px;height:28px;padding:8px 20px;box-sizing:border-box;margin-left:36px;}*/
+#bestSeller span a{display:block;font:16px 'Noto Sans KR';color:#45371e;border:1px solid #45371e;width:115px;height:28px;padding:5px 20px;box-sizing:border-box;margin-left:36px;transition:all 0.5s;}
 #bestSeller #bg_img{width:246px;height:146px;}
 #bestSeller #bg_img img{position:absolute;right:8px;bottom:24px;}
 
@@ -309,7 +315,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 #banner #pb_cafe{width:100%;height:0;padding-top:calc(264 / 480 * 100%);background-color:#badfff;float:right;background:url(../images/m_cafe.jpg) no-repeat;background-size:100% 100%;}
 
 /*contents*/
-#contents{width:100%;margin:0 auto;height:334px;background-color:#ffdce1;margin-top:0px;}
+#contents{width:100%;margin:0 auto;height:334px;margin-top:0px;}
 #contents #news{display:none;}
 #contents #kakao{width:100%;height:0;padding-top:calc(197 / 480 * 100%);background-color:#f2f2f2;float:right;border:0;position:relative;}
 #contents #kakao h3{display:none;}
@@ -321,7 +327,7 @@ body{font:14px/21px '나눔고딕',sans-serif;color:#353535;}
 /*#contents #point p{border:1px solid blue;width:184px;height:80px;}
 #contents #point p img{border:1px solid red;}*/
 #contents #point #ptext{width:50%;float:right;padding-top:36px;padding-left:0;box-sizing:border-box;}
-#contents #point h4{font:12px/26px '나눔스퀘어';margin-left:0px;float:left;}
+#contents #point h4{font:12px/26px 'Noto Sans KR';margin-left:0px;float:left;}
 #contents #point h4 span{font-size:21px;color:#005298;font-weight:bold;}
 
 /*bestSeller*/
