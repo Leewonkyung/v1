@@ -36,8 +36,8 @@ function wSize(){
 }
 function subMenu(){
     $('#mMenu_wrap .lnb>a').mouseenter(function(){
-        $('#submenu').stop().slideDown();
-        $('#mMenu_wrap ul li ul').stop().slideDown();
+        $('#submenu').stop().show();
+        $('#mMenu_wrap ul li ul').stop().show();
     })
     $('#main_menu').mouseleave(function(){
         $('#submenu').stop().slideUp();
@@ -45,12 +45,12 @@ function subMenu(){
     })
 }
 function pcSubmenu(){
-    $('#submenu').stop().slideDown();
-    $('#mMenu_wrap ul li ul').stop().slideDown();
+    $('#submenu').stop().show();
+    $('#mMenu_wrap ul li ul').stop().show();
 }
 function pcSubout(){
-    $('#submenu').stop().slideUp();
-    $('#mMenu_wrap ul li ul').stop().slideUp();
+    $('#submenu').stop().hide();
+    $('#mMenu_wrap ul li ul').stop().hide();
 }
 
 function topMenuBtn(){
