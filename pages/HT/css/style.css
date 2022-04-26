@@ -1,2 +1,584 @@
-*{margin:0;padding:0}a{text-decoration:none;color:#000}img{border:0;vertical-align:top}ul{list-style:none}body{font:16px/24px '나눔고딕',sans-serif;color:#010101;min-width:1140px}h2{font:36px '나눔바른고딕';text-align:center}h3.title{font:bold 18px/24px '나눔고딕';text-align:center;margin-top:32px}.info{text-align:center;font:16px/21px '나눔고딕';margin-top:16px;margin-bottom:40px}.btn{width:173px;margin:auto;height:52px;box-sizing:border-box;border:2px solid #d32f2f;text-align:center;color:#d32f2f;font:24px/56px 'Myriad Pro';transition:all .5s}.btn:hover{background-color:#d32f2f;color:#fff;cursor:pointer}header{width:100%;height:100px}header #header_wrap{width:1140px;margin:auto;position:relative}header h1{width:271px;background:url(../img/logo.png) no-repeat;position:absolute;left:0;text-indent:-9999px;margin-top:26px}header h1 a{display:block;width:271px;height:100%}header #main_menu{float:right;overflow:hidden;height:100%}header #main_menu li{float:left;margin-left:18px;line-height:100px}header #main_menu li a{transition:all .3s}header #main_menu li a:hover{color:#d32f2f}nav{width:100%;height:36px;background-color:#454545}nav #nav_wrap{width:1140px;margin:auto}nav #nav_wrap #leftMenu{width:50%;float:left;padding-left:10px}nav #nav_wrap #leftMenu li{float:left;margin-right:8px}nav #nav_wrap #leftMenu li a{color:#fff;display:block;font:12px/36px '나눔고딕';padding-left:8px;width:100%}nav #nav_wrap #leftMenu li a:hover{background-color:#373737}nav #nav_wrap #rightMenu{float:right;padding-right:10px}nav #nav_wrap #rightMenu li{float:left;position:relative}nav #nav_wrap #rightMenu li a{color:#fff;display:block;font:12px/36px '나눔고딕';padding-left:8px;margin-right:8px;height:36px;line-height:36px}nav #nav_wrap #rightMenu li a i{font-size:24px;position:absolute;left:8px;top:6px}nav #nav_wrap #rightMenu #user{width:140px;text-align:right}nav #nav_wrap #rightMenu #user #subMenu{position:absolute;top:36px;left:0;z-index:100;height:180px}nav #nav_wrap #rightMenu #user #subMenu li a{display:block;color:#222;text-align:left;background-color:#fff;width:132px;display:none}nav #nav_wrap #rightMenu #user #subMenu li a:hover{background-color:#464646;color:#fff}nav #nav_wrap #rightMenu #user:hover{background-color:#c21a1a}nav #nav_wrap #rightMenu #user:hover #subMenu>li>a{display:block}#mainVisual{width:100%;height:650px;overflow:hidden}#mainVisual #main01{width:65%;height:566px;float:left;overflow:hidden;background-color:pink}#mainVisual #main01 img{width:135%}#mainVisual #main02{width:35%;height:325px;float:right;overflow:hidden;background-color:#ff0}#mainVisual #main02 img{width:100%;margin-top:-50px}#mainVisual #main03{width:35%;height:325px;float:right;overflow:hidden;background-color:skyblue}#mainVisual #main03 img{width:100%}#mainVisual #mainText{width:1140px;margin:auto;height:650px;position:relative}#mainVisual #mainText #main-text1{position:absolute;bottom:120px;left:0;color:#fff;font-size:100px;font-family:'Francois One',sans-serif}#mainVisual #mainText #main-text2{position:absolute;bottom:30px;left:0;font-size:70px;font-family:'Francois One',sans-serif}#searchBox{width:1140px;margin:auto;height:121px;margin-top:55px;border-bottom:11px solid #d32f2f;background-color:#454545;box-sizing:border-box;padding-top:32px;padding-left:33px;padding-right:33px}#searchBox input{width:212px;height:49px;border:0;padding-left:16px;box-sizing:border-box;margin-right:10px}#searchBox input:nth-of-type(4){margin-right:0}#searchBox button{width:167px;height:49px;border:0;padding:0;background-color:#d32f2f;color:#fff;float:right;cursor:pointer;font-size:20px}#contents1 h2{margin-top:122px}#contents1 ul{width:1140px;margin:auto;margin-top:32px;overflow:hidden}#contents1 ul li{float:left;width:352px;margin-right:41px;position:relative}#contents1 ul li a{display:block;width:353px;height:241px;background-color:#000}#contents1 ul li a:hover img{opacity:.5}#contents1 ul li a:hover:after{display:block}#contents1 ul a:after{content:"CLICK";display:inline-block;position:absolute;top:30%;left:50%;transform:translatex(-50%);z-index:10;color:#fff;font:24px 'Myriad Pro';display:none}#contents1 ul li:nth-child(3n){margin-right:0}#contents2 h2{margin-top:128px}#contents2 ul{width:100%;margin-top:28px;overflow:hidden;background-color:#ddd}#contents2 ul li{width:20%;height:598px;float:left;background-color:#000;position:relative;overflow:hidden}#contents2 ul li img{opacity:.5}#contents2 ul li h3{position:absolute;bottom:70px;color:#fff;font:45px '나눔바른고딕';margin-left:30px}#contents2 ul li p{position:absolute;bottom:20px;color:#fff;font:16px/24px '나눔고딕';margin-left:30px}#contents3{width:1140px;margin:auto}#contents3 h2{margin-top:130px}#contents3 h2:after{content:"";display:block;width:50px;height:2px;background-color:#d32f2f;margin:20px auto}#contents3 p#subText{font:30px/48px '나눔바른고딕';text-align:center}#contents3 #gallery{width:1140px;margin:auto;height:556px;position:relative;margin-top:72px}#contents3 h3.title{text-align:left;margin-top:14px}#contents3 p.info{text-align:left;margin-top:0}#contents3 .thumbs a{display:block;overflow:hidden;width:242px;height:162px;background-color:orange;transition:all .1s}#contents3 .thumbs a:hover{outline:5px solid #464646}#contents3 .thumbs{width:242px;position:absolute}#contents3 #th01{top:0;left:0}#contents3 #th02{bottom:0;left:0;margin-top:10px}#contents3 #th03{top:0;right:0}#contents3 #th04{bottom:0;right:0}#contents3 #big{width:580px;margin:auto}#contents3 #big a{display:block;width:580px;height:438px;margin:auto;background-color:#ddd}#contents4{width:100%;height:554px;background-color:#ddd;margin-top:94px;background:url(../img/popular-bg.png) no-repeat;background-size:100%;background-position:center bottom;transition:all .5s}#contents4 #con_wrap{width:1140px;margin:auto}#contents4 #text_wrap{width:50%;float:right;box-sizing:border-box;padding-left:76px;padding-top:160px}#contents4 #text_wrap h2{text-align:left;color:#fff;font:40px/80px 'MV Boli';text-shadow:3px 3px 7px rgba(0,0,0,.35)}#contents4 #text_wrap h3{color:#fff;line-height:1;font:72px/38px 'MV Boli';text-shadow:3px 3px 7px rgba(0,0,0,.35)}#contents4 #text_wrap p{font:16px/24px '나눔고딕';color:#fff;margin-top:58px}#contents4 #text_wrap .btn{margin:0;background-color:#d32f2f;color:#fff;border:2px solid #d32f2f;margin-top:56px;transition:all .5s}#contents4 #text_wrap .btn:hover{background-color:#bc1f1f}#contents5 h2{margin-top:144px;overflow:hidden}#contents5 ul{width:1140px;margin:auto;overflow:hidden;margin-top:80px}#contents5 ul li{float:left;width:352px;margin-right:42px}#contents5 ul li a{display:block;width:352px;height:362px;background-color:#ddd;overflow:hidden}#contents5 ul li a:hover img{transform:scale(1.2);transition:all .5s}#contents5 ul li:last-child{margin-right:0}#contents5 h3.title{text-align:left;margin-top:14px}#contents5 p.info{text-align:left;margin-top:10px;margin-bottom:54px}footer{width:100%;height:320px;margin-top:73px;background-color:#252525;color:#fff;box-sizing:border-box;position:relative}footer #footer_wrap{width:1140px;margin:auto;padding-top:56px}footer #footer_wrap address{position:absolute;font-style:normal;bottom:26px;left:50%;transform:translatex(-50%);font-size:14px}footer #fLeft{width:30%;float:left}footer #fLeft p{line-height:34px}footer #fLeft p img{margin-bottom:14px}footer #fLeft p span{display:inline-block;width:20px;text-align:center}footer #fLeft p .icon{margin-right:10px}footer #fCenter{width:45%;float:left}footer #fCenter ul{overflow:hidden;padding-top:46px;padding-left:30px}footer #fCenter li{float:left;width:33%;height:30px}footer #fCenter li:last-child{width:66%}footer #fCenter li a{color:#fff;font:14px/22px '나눔고딕';display:inline-block}footer #fRight{width:25%;float:right;padding-top:46px}footer #fRight p{float:right}footer #fRight ul{float:right;margin-top:20px}footer #fRight ul li{float:left;width:36px;height:36px;border:1px solid #333;text-align:center;margin-left:10px}footer #fRight ul li i{color:#fff;font-size:21px;line-height:36px}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+ul {
+  list-style: none;
+}
+body {
+  font: 16px/24px '나눔고딕', sans-serif;
+  color: #010101;
+  min-width: 1140px;
+}
+h2 {
+  font: 36px '나눔바른고딕';
+  text-align: center;
+}
+h3.title {
+  font: bold 18px/24px '나눔고딕';
+  text-align: center;
+  margin-top: 32px;
+}
+.info {
+  text-align: center;
+  font: 16px/21px '나눔고딕';
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.btn {
+  width: 173px;
+  margin: auto;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid #d32f2f;
+  text-align: center;
+  color: #d32f2f;
+  font: 24px/56px 'Myriad Pro';
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #d32f2f;
+  color: #fff;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: 100px;
+}
+header #header_wrap {
+  width: 1140px;
+  margin: auto;
+  position: relative;
+}
+header h1 {
+  width: 271px;
+  background: url(../img/logo.png) no-repeat;
+  position: absolute;
+  left: 0;
+  text-indent: -9999px;
+  margin-top: 26px;
+}
+header h1 a {
+  display: block;
+  width: 271px;
+  height: 100%;
+}
+header #main_menu {
+  float: right;
+  overflow: hidden;
+  height: 100%;
+}
+header #main_menu li {
+  float: left;
+  margin-left: 18px;
+  line-height: 100px;
+}
+header #main_menu li a {
+  transition: all 0.3s;
+}
+header #main_menu li a:hover {
+  color: #d32f2f;
+}
+nav {
+  width: 100%;
+  height: 36px;
+  background-color: #454545;
+}
+nav #nav_wrap {
+  width: 1140px;
+  margin: auto;
+}
+nav #nav_wrap #leftMenu {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+nav #nav_wrap #leftMenu li {
+  float: left;
+  margin-right: 8px;
+}
+nav #nav_wrap #leftMenu li a {
+  color: #fff;
+  display: block;
+  font: 12px/36px '나눔고딕';
+  padding-left: 8px;
+  width: 100%;
+}
+nav #nav_wrap #leftMenu li a:hover {
+  background-color: #373737;
+}
+nav #nav_wrap #rightMenu {
+  float: right;
+  padding-right: 10px;
+}
+nav #nav_wrap #rightMenu li {
+  float: left;
+  position: relative;
+}
+nav #nav_wrap #rightMenu li a {
+  color: #fff;
+  display: block;
+  font: 12px/36px '나눔고딕';
+  padding-left: 8px;
+  margin-right: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+nav #nav_wrap #rightMenu li a i {
+  font-size: 24px;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+nav #nav_wrap #rightMenu #user {
+  width: 140px;
+  text-align: right;
+}
+nav #nav_wrap #rightMenu #user #subMenu {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 100;
+  height: 180px;
+}
+nav #nav_wrap #rightMenu #user #subMenu li a {
+  display: block;
+  color: #222;
+  text-align: left;
+  background-color: #fff;
+  width: 132px;
+  display: none;
+}
+nav #nav_wrap #rightMenu #user #subMenu li a:hover {
+  background-color: #464646;
+  color: #fff;
+}
+nav #nav_wrap #rightMenu #user:hover {
+  background-color: #c21a1a;
+}
+nav #nav_wrap #rightMenu #user:hover #subMenu > li > a {
+  display: block;
+}
+#mainVisual {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+#mainVisual #main01 {
+  width: 65%;
+  height: 566px;
+  float: left;
+  overflow: hidden;
+}
+#mainVisual #main01 img {
+  height: 100%;
+}
+#mainVisual #main02 {
+  width: 35%;
+  height: 325px;
+  float: right;
+  overflow: hidden;
+}
+#mainVisual #main02 img {
+  width: 100%;
+  margin-top: -50px;
+}
+#mainVisual #main03 {
+  width: 35%;
+  height: 325px;
+  float: right;
+  overflow: hidden;
+}
+#mainVisual #main03 img {
+  width: 100%;
+}
+#mainVisual #mainText {
+  width: 1140px;
+  margin: auto;
+  height: 650px;
+  position: relative;
+}
+#mainVisual #mainText #main-text1 {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  color: #fff;
+  font-size: 100px;
+  font-family: 'Francois One', sans-serif;
+}
+#mainVisual #mainText #main-text2 {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  font-size: 70px;
+  font-family: 'Francois One', sans-serif;
+}
+#searchBox {
+  width: 1140px;
+  margin: auto;
+  height: 121px;
+  margin-top: 55px;
+  border-bottom: 11px solid #d32f2f;
+  background-color: #454545;
+  box-sizing: border-box;
+  padding-top: 32px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+#searchBox input {
+  width: 212px;
+  height: 49px;
+  border: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+#searchBox input:nth-of-type(4) {
+  margin-right: 0;
+}
+#searchBox button {
+  width: 167px;
+  height: 49px;
+  border: 0;
+  padding: 0;
+  background-color: #d32f2f;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+#contents1 h2 {
+  margin-top: 122px;
+}
+#contents1 ul {
+  width: 1140px;
+  margin: auto;
+  margin-top: 32px;
+  overflow: hidden;
+}
+#contents1 ul li {
+  float: left;
+  width: 352px;
+  margin-right: 41px;
+  position: relative;
+}
+#contents1 ul li a {
+  display: block;
+  width: 353px;
+  height: 241px;
+  background-color: #000;
+}
+#contents1 ul li a:hover img {
+  opacity: 0.5;
+}
+#contents1 ul li a:hover:after {
+  display: block;
+}
+#contents1 ul a:after {
+  content: "CLICK";
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: #fff;
+  font: 24px 'Myriad Pro';
+  display: none;
+}
+#contents1 ul li:nth-child(3n) {
+  margin-right: 0;
+}
+#contents2 h2 {
+  margin-top: 128px;
+}
+#contents2 ul {
+  width: 100%;
+  margin-top: 28px;
+  overflow: hidden;
+  background-color: #ddd;
+}
+#contents2 ul li {
+  width: 20%;
+  height: 598px;
+  float: left;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+#contents2 ul li img {
+  opacity: 0.5;
+}
+#contents2 ul li h3 {
+  position: absolute;
+  bottom: 70px;
+  color: #fff;
+  font: 45px '나눔바른고딕';
+  margin-left: 30px;
+}
+#contents2 ul li p {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font: 16px/24px '나눔고딕';
+  margin-left: 30px;
+}
+#contents3 {
+  width: 1140px;
+  margin: auto;
+}
+#contents3 h2 {
+  margin-top: 130px;
+}
+#contents3 h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #d32f2f;
+  margin: 20px auto;
+}
+#contents3 p#subText {
+  font: 30px/48px '나눔바른고딕';
+  text-align: center;
+}
+#contents3 #gallery {
+  width: 1140px;
+  margin: auto;
+  height: 556px;
+  position: relative;
+  margin-top: 72px;
+}
+#contents3 h3.title {
+  text-align: left;
+  margin-top: 14px;
+}
+#contents3 p.info {
+  text-align: left;
+  margin-top: 0;
+}
+#contents3 .thumbs a {
+  display: block;
+  overflow: hidden;
+  width: 242px;
+  height: 162px;
+  background-color: orange;
+  transition: all 0.1s;
+}
+#contents3 .thumbs a:hover {
+  outline: 5px solid #464646;
+}
+#contents3 .thumbs {
+  width: 242px;
+  position: absolute;
+}
+#contents3 #th01 {
+  top: 0;
+  left: 0;
+}
+#contents3 #th02 {
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
+}
+#contents3 #th03 {
+  top: 0;
+  right: 0;
+}
+#contents3 #th04 {
+  bottom: 0;
+  right: 0;
+}
+#contents3 #big {
+  width: 580px;
+  margin: auto;
+}
+#contents3 #big a {
+  display: block;
+  width: 580px;
+  height: 438px;
+  margin: auto;
+  background-color: #ddd;
+}
+#contents4 {
+  width: 100%;
+  height: 554px;
+  background-color: #ddd;
+  margin-top: 94px;
+  background: url(../img/popular-bg.png) no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  transition: all 0.5s;
+}
+#contents4 #con_wrap {
+  width: 1140px;
+  margin: auto;
+}
+#contents4 #text_wrap {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding-left: 76px;
+  padding-top: 160px;
+}
+#contents4 #text_wrap h2 {
+  text-align: left;
+  color: #fff;
+  font: 40px/80px 'MV Boli';
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
+}
+#contents4 #text_wrap h3 {
+  color: #fff;
+  line-height: 1;
+  font: 72px/38px 'MV Boli';
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
+}
+#contents4 #text_wrap p {
+  font: 16px/24px '나눔고딕';
+  color: #fff;
+  margin-top: 58px;
+}
+#contents4 #text_wrap .btn {
+  margin: 0;
+  background-color: #d32f2f;
+  color: #fff;
+  border: 2px solid #d32f2f;
+  margin-top: 56px;
+  transition: all 0.5s;
+}
+#contents4 #text_wrap .btn:hover {
+  background-color: #bc1f1f;
+}
+#contents5 h2 {
+  margin-top: 144px;
+  overflow: hidden;
+}
+#contents5 ul {
+  width: 1140px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 80px;
+}
+#contents5 ul li {
+  float: left;
+  width: 352px;
+  margin-right: 42px;
+}
+#contents5 ul li a {
+  display: block;
+  width: 352px;
+  height: 362px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+#contents5 ul li a:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+#contents5 ul li:last-child {
+  margin-right: 0;
+}
+#contents5 h3.title {
+  text-align: left;
+  margin-top: 14px;
+}
+#contents5 p.info {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 54px;
+}
+footer {
+  width: 100%;
+  height: 320px;
+  margin-top: 73px;
+  background-color: #252525;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+footer #footer_wrap {
+  width: 1140px;
+  margin: auto;
+  padding-top: 56px;
+}
+footer #footer_wrap address {
+  position: absolute;
+  font-style: normal;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+footer #fLeft {
+  width: 30%;
+  float: left;
+}
+footer #fLeft p {
+  line-height: 34px;
+}
+footer #fLeft p img {
+  margin-bottom: 14px;
+}
+footer #fLeft p span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+footer #fLeft p .icon {
+  margin-right: 10px;
+}
+footer #fCenter {
+  width: 45%;
+  float: left;
+}
+footer #fCenter ul {
+  overflow: hidden;
+  padding-top: 46px;
+  padding-left: 30px;
+}
+footer #fCenter li {
+  float: left;
+  width: 33%;
+  height: 30px;
+}
+footer #fCenter li:last-child {
+  width: 66%;
+}
+footer #fCenter li a {
+  color: #fff;
+  font: 14px/22px '나눔고딕';
+  display: inline-block;
+}
+footer #fRight {
+  width: 25%;
+  float: right;
+  padding-top: 46px;
+}
+footer #fRight p {
+  float: right;
+}
+footer #fRight ul {
+  float: right;
+  margin-top: 20px;
+}
+footer #fRight ul li {
+  float: left;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  text-align: center;
+  margin-left: 10px;
+}
+footer #fRight ul li i {
+  color: #fff;
+  font-size: 21px;
+  line-height: 36px;
+}
