@@ -3,11 +3,10 @@ $(function(){
         auto: true,
         speed: 500,
         mode: 'fade',
-        captions: true,
-        slideWidth: 1200,        
+        captions: true,        
       });
 
-	var visual = $('#con_set > ul > li');
+	var visual = $('#con_set  ul > li');
     var button = $('#nav > a');
     var current = 0;
     var setIntervalId;
