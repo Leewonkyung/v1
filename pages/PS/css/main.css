@@ -1,0 +1,63 @@
+
+/*mainVisual*/
+.main_visual{width:100%;height:480px;margin:0 auto;clear:both;}
+.main_visual .slider > div:first-child{background-color: #fef4ff;}
+.main_visual .slider > div:nth-child(2){background-color: #ffede4;}
+.main_visual .slider > div:nth-child(3){background-color: #fffde4;}
+.main_visual .bx-wrapper{margin-bottom: 0;border: 0;box-shadow: unset;}
+.main_visual .bx-wrapper img{margin: 0 auto;}
+.main_visual .bx-wrapper .bx-controls-direction a{padding: 16px;border-radius: 50%;background: url(../images/arrow2.png) no-repeat center center / contain;opacity: 0.5;}
+.main_visual .bx-wrapper .bx-controls-direction .bx-prev{transform: rotate(180deg);}
+.main_visual .bx-wrapper .bx-prev:hover,.main_visual .bx-wrapper .bx-prev:focus,
+.main_visual .bx-wrapper .bx-next:hover,.main_visual .bx-wrapper .bx-next:focus{background-position: center;opacity: 1;;}
+.main_visual .bx-wrapper .bx-pager{padding-top: 0;bottom: 16px;}
+.main_visual .bx-wrapper .bx-pager.bx-default-pager a{background-color: #fff;}
+.main_visual .bx-wrapper .bx-pager.bx-default-pager a:hover,.main_visual .bx-wrapper .bx-pager.bx-default-pager a.active,.main_visual .bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #ff9d9e;}
+
+/*container*/
+.wrap{width:1200px;margin:0 auto;}
+
+.container h2{padding-left:10px; margin-bottom: 15px; border-left: 3px solid #ff9d9e; font-weight: bold; line-height: 1;}
+.container ul{overflow: hidden;}
+.container ul li:nth-child(2){margin-left:34px;margin-right:35px;}
+.container ul li{float:left;}
+.container .title{font:bold 16px/32px '나눔바른고딕';text-align:center;}
+.container .price{font-size:14px;line-height:21px;text-align:center;color:#c18243;font-weight:bold;}
+
+.photo{width:377px;height:auto;position:relative;}
+.photo .photo_box{overflow:hidden;}
+.photo span{display:block;position:absolute;z-index:1;top: 50%;left: 50%;transform: translate(-50%,-50%);width:90px;height:20px;text-align:center;line-height:20px;border:1px solid #fff;color:#fff;display:none;}
+.photo a{display: inline-block; width: 377px; height: 316px; border-radius: 10px; background-color:#000; overflow:hidden;}
+.photo a img{ transition: all .3s;}
+.photo a:hover .photo_box{transform: scale(1.2);opacity:0.7;}
+.photo a:hover span{display:block;}
+.photo a:hover span:hover{background-color:#fff;color:#666;font-weight:bold;}
+
+/*best_item*/
+.container #con_best{height:auto;margin:50px auto;}
+.container #con_main{padding:40px 0;background:#fff6f6;}
+/*set_item*/
+.container #con_set{height:400px;padding: 50px 0;position:relative;}
+.container #con_set .wrap{position: relative;height: 100%;overflow: hidden;}
+.container #con_set ul li{float:left;position:absolute;top:0;}
+.container #con_set ul li:first-child{left:0;}
+.container #con_set ul li:last-child{left:1200px;margin-left:0;}
+.container #nav{position:absolute;right:0;bottom:0px;z-index:10;}
+.container #nav a{display:inline-block;width:15px;height:15px;border-radius:15px;border:2px solid #c18243;box-sizing:border-box;text-indent:-9999px;}
+.container #nav a.on{display:inline-block;width:15px;height:15px;border-radius:15px;background-color:#c18243;text-indent:-9999px;}
+/*popular_item*/
+.container #con_pop{height:auto;padding:40px 0;background:#f7f7f7;clear:both;}
+.container #con_pop ul{overflow:hidden;}
+/*event_item*/
+.container #con_event{height:400px;margin-top: 50px;overflow:hidden;}
+.container #con_event #ev01{width:788px;height:400px;background-color:#c18243;float:left;margin-right:35px;}
+.container #con_event #ev02,#ev03{width:376px;height:185px;background-color:#000;float:right;}
+.container #con_event #ev03{margin-top:32px;}
+/*sns_icon*/
+.container #sns{clear:both;width:100%;height:155px;box-sizing:border-box;}
+.container #sns ul{width:232px;height:70px;margin:0 auto;margin-top:54px;}
+.container #sns ul li{margin:10px;/*filter:grayscale(1);*/}
+.container #sns ul li a.btn{display:block;width:57px;height:57px;overflow:hidden;position:relative;opacity: 0.5;}
+.container #sns ul li a:hover.btn{opacity: 1;}
+.container #sns ul li a:hover.btn img{position:absolute;top:-57px;}
+

@@ -1,5 +1,5 @@
 $(function(){
-	$('.slider').bxSlider({
+	$('.main_visual .slider').bxSlider({
         auto: true,
         speed: 500,
         mode: 'fade',
@@ -39,8 +39,9 @@ $(function(){
         
         var currentEl = visual.eq(current);
         var nextEl = visual.eq(i);
+        var contW = $('.wrap').outerWidth();
         
-        currentEl.css({left:0}).stop().animate({left:'-1200px'});
+        currentEl.css({left:0}).stop().animate({left:'-'+contW+'px'});
         nextEl.css({left:'100%'}).stop().animate({left:0});
 
         current = i;

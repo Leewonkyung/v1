@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>PS I LOVE YOU</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
-  <div id="header">
-    <div id="top_bar">
-        <div id="top_menu">
+  <!-- header -->
+  <header>
+    <div class="top_bar">
+        <div class="top_menu">
             <ul>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">JOIN</a></li>
@@ -25,10 +26,10 @@
             </ul>
         </div>
     </div>
-    <div id="logo_menu">
+    <div class="logo_menu">
         <h1><a href="index.html"><img src="images/logo.jpg" alt="로고"></a></h1>
-        <div id="r_wrap">
-            <div id="top_menu2">
+        <div class="r_wrap">
+            <div class="top_menu2">
                 <ul>
                     <li><a href="#">NOTICE</a></li>
                     <li><a href="#">Q&amp;A</a></li>
@@ -37,27 +38,27 @@
                     <li><a href="#">ABOUT PS</a></li>
                 </ul>
             </div>
-            <div id="search">
+            <div class="search">
                 <input type="search" placeholder="검색">
                 <button><img src="images/search_btn.png" alt="돋보기"></button>
             </div>
         </div>
     </div>
-    <div id="main_menu_wrap">
-        <div id="main_menu">
+    <div class="main_menu_wrap">
+        <div class="main_menu">
             <ul>
                 <li><a href="detail.html">DIFFUSER</a></li>
                 <li><a href="detail.html">SOY CANDLE</a></li>
                 <li><a href="detail.html">ROOM AROMA</a></li>
                 <li><a href="detail.html">PURE SPRAY</a></li>
                 <li><a href="detail.html">GIFT</a>
-                    <ul class="submenu">
+                    <ul class="sub_menu">
                         <li><a href="#">대량제작</a></li>
                         <li><a href="#">답례품</a></li>
                     </ul>
                 </li>
                 <li><a href="detail.html">ACC</a>
-                    <ul class="submenu">
+                    <ul class="sub_menu">
                         <li><a href="#">우드코스터</a></li>
                         <li><a href="#">윅트리머</a></li>
                         <li><a href="#">윅디퍼</a></li>
@@ -66,29 +67,32 @@
             </ul>
         </div>
     </div>
-  </div>
+  </header>
+  <!--// header -->
 
-  <div id="mainVisual">
+  <!-- mainSlide -->
+  <div class="main_visual">
     <div class="slider">
       <div><a href="#"><img src="images/mainvisual01.jpg" alt="mainVisual"></a></div>
       <div><a href="#"><img src="images/mainvisual02.jpg" alt="mainVisual"></a></div>
       <div><a href="#"><img src="images/mainvisual03.jpg" alt="mainVisual"></a></div>
     </div>
   </div>
+  <!--// mainSlide -->
 
-  <div id="container">
+  <div class="container">
     <div id="con_best" class="wrap">
         <h2>BEST ITEM</h2>
         <ul>
-          <li class="photo"><a href="detail.html"><img src="images/best01.jpg" alt="모던 아로마 100ml" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="detail.html"><img src="images/best01.jpg" alt="모던 아로마 100ml" class="photo_box"><span>VIEW MORE</span></a>
               <h3 class="title">모던 아로마 100ml</h3>
               <p class="price">35,000원</p>
           </li>
-          <li class="photo"><a href="detail.html"><img src="images/best02.jpg" alt="천연 디퓨저 200ml" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="detail.html"><img src="images/best02.jpg" alt="천연 디퓨저 200ml" class="photo_box"><span>VIEW MORE</span></a>
               <h3 class="title">천연 디퓨저 200ml</h3>
               <p class="price">51,000원</p>
           </li>
-          <li class="photo"><a href="detail.html"><img src="images/best03.jpg" alt="발렌타인 키스 250ml" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="detail.html"><img src="images/best03.jpg" alt="발렌타인 키스 250ml" class="photo_box"><span>VIEW MORE</span></a>
               <h3 class="title">발렌타인 키스 250ml</h3>
               <p class="price">34,000원</p>
           </li>
@@ -98,15 +102,15 @@
       <div class="wrap">
         <h2>MAIN ITEM</h2>
         <ul>
-            <li class="photo"><a href="#"><img src="images/main01.jpg" alt="greatmom 천연디퓨저 100ml" class="photoBox"><span>VIEW MORE</span></a>
+            <li class="photo"><a href="#"><img src="images/main01.jpg" alt="greatmom 천연디퓨저 100ml" class="photo_box"><span>VIEW MORE</span></a>
                 <h3 class="title">greatmom 천연디퓨저 100ml</h3>
                 <p class="price">39,000원</p>
             </li>
-            <li class="photo"><a href="#"><img src="images/main02.jpg" alt="카네이션볼 디퓨저 80ml/150ml" class="photoBox"><span>VIEW MORE</span></a>
+            <li class="photo"><a href="#"><img src="images/main02.jpg" alt="카네이션볼 디퓨저 80ml/150ml" class="photo_box"><span>VIEW MORE</span></a>
                 <h3 class="title">카네이션볼 디퓨저 80ml/150ml</h3>
                 <p class="price">29,000원</p>
             </li>
-            <li class="photo"><a href="#"><img src="images/main03.jpg" alt="크리스탈 큐브 70ml" class="photoBox"><span>VIEW MORE</span></a>
+            <li class="photo"><a href="#"><img src="images/main03.jpg" alt="크리스탈 큐브 70ml" class="photo_box"><span>VIEW MORE</span></a>
                 <h3 class="title">크리스탈 큐브 70ml</h3>
                 <p class="price">26,000원</p>
             </li>
@@ -129,15 +133,15 @@
       <div class="wrap">
         <h2>POPULAR ITEM</h2>
         <ul>
-          <li class="photo"><a href="#"><img src="images/pop01.jpg" alt="[천연향] tealight soycandle" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="#"><img src="images/pop01.jpg" alt="[천연향] tealight soycandle" class="photo_box"><span>VIEW MORE</span></a>
             <h3 class="title">[천연향] tealight soycandle</h3>
             <p class="price">15,000원</p>
           </li>
-          <li class="photo"><a href="#"><img src="images/pop02.jpg" alt="[정신집중 기능성] 공부방 캔들" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="#"><img src="images/pop02.jpg" alt="[정신집중 기능성] 공부방 캔들" class="photo_box"><span>VIEW MORE</span></a>
             <h3 class="title">[정신집중 기능성] 공부방 캔들</h3>
             <p class="price">24,000원</p>
           </li>
-          <li class="photo"><a href="#"><img src="images/pop03.jpg" alt="안티버그 천연스프레이 100ml" class="photoBox"><span>VIEW MORE</span></a>
+          <li class="photo"><a href="#"><img src="images/pop03.jpg" alt="안티버그 천연스프레이 100ml" class="photo_box"><span>VIEW MORE</span></a>
             <h3 class="title">안티버그 천연스프레이 100ml</h3>
             <p class="price">17,000원</p>
           </li>
@@ -146,8 +150,8 @@
     </div>
     <div id="con_event" class="wrap">
             <div id="ev01"><a href="#"><img src="images/suggest.jpg" alt="[천연향]AROMA BAR 60g"></a></div>
-            <div id="ev02"><a href="#"><img src="images/event01.jpg" alt="soycandle refill" class="photoBox"></a></div>
-            <div id="ev03"><a href="#"><img src="images/event02.jpg" alt="members coupon" class="photoBox"></a></div>
+            <div id="ev02"><a href="#"><img src="images/event01.jpg" alt="soycandle refill" class="photo_box"></a></div>
+            <div id="ev03"><a href="#"><img src="images/event02.jpg" alt="members coupon" class="photo_box"></a></div>
     </div>
     <div id="sns">
         <ul>
@@ -157,9 +161,10 @@
         </ul>
     </div>
   </div>
-  <div id="footer">
-    <div id="footer_wrap">
-      <div id="ps_info">
+
+  <footer>
+    <div class="footer_wrap">
+      <div class="ps_info">
           <ul>
               <li><a href="#">이용약관 |</a></li>
               <li><a href="#">&nbsp;개인정보처리방침 |</a></li>
@@ -173,19 +178,20 @@
           </p>
           <p>Copyright &copy; 2018 PS. I LOVE YOU All rights reserved.<img src="images/payicon.png" alt="escrow pay"></p>
       </div>
-      <div id="ps_bank">
+      <div class="ps_bank">
         <h4>은행계좌</h4>
         <p>은행 : 농협</p>
         <p>계좌번호 : 170325-56-138669</p>
         <p>예금주 : 김효신</p>
       </div>
-      <div id="ps_center">
+      <div class="ps_center">
           <h4>고객센터</h4>
           <p>☎ 070.4007.0988</p>
           <p>AM 11:00 - PM 4:00</p>
           <p>SAT.SUN HOLIDAY OFF</p>
       </div>
     </div>
-  </div>
+  </footer>
+  
 </body>
 </html>
