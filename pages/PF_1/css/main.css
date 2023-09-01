@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* common */
+.ta-l{text-align: left !important;}
+.ta-c{text-align: center !important;}
+.ta-r{text-align: right !important;}
+.flex-box{display: flex;align-items: center;justify-content: center;}
+.fl-wrap{flex-wrap: wrap;}
+.fl-column{flex-direction: column;}
+
+.sec-tit{font-size: 64px;line-height: 75px;font-weight: 600;}
+.sec-text{font-size: 24px;line-height: 28px;font-weight: 400;}
