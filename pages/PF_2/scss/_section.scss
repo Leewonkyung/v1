@@ -1,0 +1,165 @@
+
+.visual{
+  .inner{
+    height: 512px;
+    padding: 48px;
+    border-radius: 24px;
+    background: $base-color url(#{$image-url}visual_bg.jpg) no-repeat center right;
+
+    .tit{
+      font-size: 64px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .flex-box{
+      margin-top: 24px;
+      gap: 96px;
+    }
+    .count-box{
+      .count{
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+    .search-area{
+      width: 450px;
+      margin-top: 48px;
+      padding: 8px;
+      border-radius: 12px;
+      background: #fff;
+      input{
+        width: 80%;
+        height: 48px;
+        padding-left: 10px;
+        font-size: 18px;
+      }     
+      .btn-search{
+        float: right;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background-color: $base-color;
+      } 
+    }
+  }
+}
+
+.btn-more{
+  margin-top: 24px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: $base-color;
+  .icon-arrow{
+    margin-left: 10px;
+  }
+}
+
+.best{
+  padding: 96px 0 112px;
+  .inner{
+    > .flex-box{
+      @include flex-box($align: flex-start,$gap: 60px);
+    }
+    .info-box{
+      width: 196px;
+      flex-shrink: 0;
+    }
+    .product{
+      gap: 48px;
+      li{
+        .img{
+          display: block;
+          width: 100%;
+          height: 363px;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+        .name{
+          margin-top: 12px;
+        }
+        .price{
+          margin-top: 7px;
+          @include font-op(0.5);
+        }
+      }
+    }
+  }
+}
+
+.about{
+  padding-bottom: 165px;
+  .inner{
+    .flex-box{
+      margin-top: 48px;
+      gap: 24px;
+    }
+    .item{
+      flex: 1;
+      .icon-area{
+        position: relative;
+        display: inline-block;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: $base-color;
+
+        i[class*='icon-']{
+          @include center();
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .tit{
+        margin-top: 24px;
+        font-weight: 700;
+      }
+      .text{
+        margin-top: 12px;
+        @include font-op(0.5);
+      }
+    }
+  }
+}
+
+.category{
+  .bg{
+    margin-top: 96px;
+    padding-top: 48px;
+    padding-bottom: 100px;
+    background-color: $base-color;
+  }
+  .flex-box{
+    @include flex-box($align: flex-start,$jc: space-between, $gap: 96px);
+  }
+  .card{
+    flex: 1;
+    @include text(center);
+    &:first-child,
+    &:last-child{
+      margin-top: -96px;
+    }
+    .tit{
+      margin-top: 12px;
+      font-weight: 700;
+    }
+  }
+  .btn-explore{
+    @extend .btn-more;
+    background-color: #fff;
+    color: $text-color;
+  }
+}
+
+.interview{
+  padding: 96px 0;
+  
+  .swiper{
+    margin-top: 48px;
+    &-slide{
+      width: 800px;
+      padding: 48px;
+      border-radius: 12px;
+      background-color: $base-color;
+    }
+  }
+}

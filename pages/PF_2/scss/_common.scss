@@ -1,0 +1,167 @@
+body{
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #1E1E1E;
+  overflow-x: hidden;
+}
+.blind{
+  @include blind;
+}
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+.ta-l{
+  @include text(left);
+}
+.ta-r{
+  @include text(right);
+}
+.ta-c{
+  @include text(center);
+}
+.inner{
+  width: 1248px;
+  margin: 0 auto;
+}
+.sec-tit{
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.sec-text{
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  @include font-op(0.5);
+}
+.page-text{
+  @extend .sec-text;
+  @include font-op(0.75);
+}
+
+i{
+  &[class*='icon-']{
+    @include icon();
+    vertical-align: middle;
+  }
+  &.icon{
+    &-cart{
+      @include icon-bg($name: cart);
+    }
+    &-person{
+      @include icon-bg($name: person);
+    }
+    &-menu{
+      @include icon-bg($name: menu);
+    }
+    &-search{
+      @include icon(20px, 20px);
+      @include icon-bg($name: search);
+    }
+    &-arrow{
+      @include icon(24px, 20px);
+      @include icon-bg($name: arrow);
+    }
+    &-plant{
+      @include icon-bg($name: plant);
+    }
+    &-box{
+      @include icon-bg($name: box);
+    }
+    &-support{
+      @include icon-bg($name: support);
+    }
+    &-facebook{
+      @include icon-bg($name: facebook);
+    }
+    &-instagram{
+      @include icon-bg($name: instagram);
+    }
+    &-twitter{
+      @include icon-bg($name: twitter);
+    }
+  }
+}
+
+.flex-box{
+  @include flex-box();
+}
+
+// header
+.header{
+  .inner{
+    padding: 40px 0;
+    @include flex-box($gap: 96px);
+  }
+  .logo{
+    display: inline-block;
+    width: 142px;
+    height: 39px;
+    background: url(#{$image-url}logo.svg) no-repeat center / contain;
+  }
+  .gnb{
+    @include flex-box($gap: 48px);
+    a{
+      font-weight: 500;
+      &:not(.active){
+        @include font-op(0.5);
+      }
+    }
+  }
+  .right{
+    margin-left: auto;
+  }
+}
+
+.footer{
+  padding: 48px 0;
+  background-color: $base-color;
+  .sec-text{
+    margin-top: 24px;
+  }
+  .left{
+    float: left;
+    .sns-area{
+      position: relative;
+      margin-top: 24px;
+      @include flex-box($gap: 24px);
+      a{
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid rgba(30,30,30,0.5);
+        i[class*='icon-']{
+          @include center();
+        }
+      }
+    }
+  }
+  .right{
+    float: right;
+    ul{
+      gap: 48px;
+      li{
+        @include flex-box($align: flex-start, $gap: 24px);
+        flex-direction: column;
+        p{
+          font-weight: 700;
+        }
+        a{
+          font-weight: 400;
+          @include font-op(0.5);
+        }
+      }
+    }
+  }
+  .copyright{
+    margin-top: 98px;
+    @include font-op(0.5);
+  }
+}

@@ -1,0 +1,67 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+@mixin ellipsis($line: 1) {
+  @if ($line == 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+}
+
+@mixin text($align) {
+  text-align: $align;
+}
+
+@mixin icon($w: 24px, $h: 24px) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin icon-bg($name, $path: $image-url, $format: "svg") {
+  background-image: url("#{$path}icon_#{$name}.#{$format}");
+}
+
+@mixin font-op($op){
+  color: rgba(30,30,30, $op);
+}
+
+@mixin flex-box($align: center, $jc: flex-start, $gap: 0){
+  display: flex;
+  align-items: $align;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+@mixin center(){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
