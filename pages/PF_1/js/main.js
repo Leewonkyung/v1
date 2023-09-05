@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  AOS.init();
+  
   var headerH = $('header').outerHeight();
   $(window).scroll(function(){
 
