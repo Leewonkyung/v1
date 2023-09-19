@@ -85,6 +85,14 @@ i{
     &-twitter{
       @include icon-bg($name: twitter);
     }
+    &-qmark{
+      @include icon(48px, 41px);
+      @include icon-bg($name: qmark);
+    }
+    &-star{
+      @include icon(20px, 20px);
+      @include icon-bg($name: star);
+    }
   }
 }
 
@@ -94,9 +102,16 @@ i{
 
 // header
 .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
   .inner{
     padding: 40px 0;
     @include flex-box($gap: 96px);
+    transition: all ease 0.4s;
   }
   .logo{
     display: inline-block;
@@ -115,6 +130,34 @@ i{
   }
   .right{
     margin-left: auto;
+    @include flex-box($gap: 48px);
+
+    a [class*='icon-']{
+      vertical-align: unset;
+    }
+    .menu{
+      position: relative;
+      margin-left: 48px;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -48px;
+        top: 2px;
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: #1E1E1E;
+      }
+    }
+  }
+  &.fixed{
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
+    .inner{
+      padding: 20px 0;
+    }
   }
 }
 
@@ -163,5 +206,20 @@ i{
   .copyright{
     margin-top: 98px;
     @include font-op(0.5);
+  }
+}
+
+.line {
+  stroke-dasharray: 1100; 
+  stroke-dashoffset: 0;
+  animation: dash 1.5s linear alternate;
+ }
+
+@keyframes dash {
+  0% { 
+    stroke-dashoffset: 1100; 
+  }
+  100% { 
+    stroke-dashoffset: 0; 
   }
 }

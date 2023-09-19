@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
   />
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 </head>
 <body>
@@ -34,7 +37,7 @@
   </div>
   <div class="visual">
     <div class="inner">
-      <p class="tit">Buy your<br/> dream plants</p>
+      <p class="tit titleGreathorned">Buy your<br/> dream plants</p>
       <div class="flex-box">
         <div class="count-box">
           <p class="count">50+</p>
@@ -48,6 +51,16 @@
       <div class="search-area clearfix">
         <input type="text" placeholder="What are you looking for?"/>
         <button class="btn-search"><span class="blind">검색</span><i class="icon-search"></i></button>
+      </div>
+      <div class="path path-01">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="176" viewBox="0 0 90 176" fill="none">
+          <path class="line" d="M2.71255 3.45809C33.8814 10.7611 28.1791 8.8238 52.4497 28.3829C57.9929 32.8501 66.4403 38.6547 68.0203 44.7901C70.352 53.8443 50.7384 75.4277 39.704 63.5084C32.5728 55.8053 34.749 45.7162 46.4272 45.4662C65.5785 45.0563 79.7993 61.6993 84.856 74.5055C90.4232 88.6044 84.0452 101.312 68.2617 106.479C61.0513 108.839 49.9754 104.646 56.6878 97.761C70.4941 83.5986 83.6825 107.299 80.925 118.106C75.9581 137.57 44.0604 157.613 16.2347 147.271C7.53471 144.038 10.6122 141.723 14.4524 140.351C18.3492 138.958 28.3215 132.946 25.582 135.457C20.7927 139.847 15.0382 140.779 8.55869 142.558C0.201351 144.853 16.9101 157.483 21.7093 161.738C24.2287 163.971 27.7986 168.522 28.3235 171.384C29.36 177.035 20.171 160.858 18.7172 155.213" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="path path-02">
+        <svg xmlns="http://www.w3.org/2000/svg" width="184" height="87" viewBox="0 0 184 87" fill="none">
+          <path class="line" d="M2.15951 36.0588C3.57972 22.1631 3.02297 4.58497 20.1626 2.13229C28.3069 0.966842 38.6411 9.4327 41.1549 16.5495C43.24 22.4529 47.9372 29.0267 43.5371 35.1378C40.0809 39.9379 34.0251 42.0545 28.4936 39.2748C12.7852 31.3809 28.3569 14.4894 38.7205 12.2945C52.8661 9.2987 81.8699 35.3336 74.8963 50.4526C68.9171 63.4156 56.7363 52.6515 60.1164 41.7339C64.8712 26.376 73.5221 22.2556 89.8024 29.5491C102.514 35.2438 106.999 52.968 103.722 64.7013C103.041 67.1382 103.02 82.1683 101.159 81.4575C82.8028 74.4438 97.8965 46.0985 111.806 43.2661C127.787 40.0117 143.994 36.9012 158.673 44.3771C166.566 48.3973 185.763 66.6456 180.521 59.5053C173.96 50.5695 165.913 37.8985 165.802 26.2532C165.768 22.788 165.395 11.7251 166.223 22.2642C167.076 33.1182 167.574 42.6987 170.297 52.6744C170.903 54.8944 174.897 56.7038 176.587 58.084C178.018 59.253 171.063 59.9374 170.299 60.1744C163.696 62.2202 158.958 67.1249 154.835 72.4669C151.155 77.2349 147.787 84.6695 143.371 84.4252" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
     </div>
   </div>
@@ -85,6 +98,14 @@
       </div>
     </div>
   </div>
+
+  <div class="issue">
+    <div class="inner">
+      <p class="sec-tit"><b>Plant a tree today</b><br/>it will be help us breathe tomorrow</p>
+      <p class="sec-text">We know how important trees are to our existence and for the well-being of the planet at large, which is why we have put together a number</p>
+    </div>
+  </div>
+
   <div class="about ta-c">
     <div class="inner">
       <p class="sec-tit">About us</p>
@@ -148,15 +169,50 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <div class="interview-detail">
+              <div class="inerviewee">
+                <i class="icon-qmark"></i>
+                <p class="inerviewee-img"><img src="image/person01.png"/></p>
+              </div>              
+              <p class="name">John Doe<br/><span class="job">Youtuber</span></p>
+              <div class="evaluation">
+                <i class="icon-star"></i>
+                <p class="grade">4.5</p>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <div class="interview-detail">
+              <div class="inerviewee">
+                <i class="icon-qmark"></i>
+                <p class="inerviewee-img"><img src="image/person02.png"/></p>
+              </div>              
+              <p class="name">John Doe<br/><span class="job">Youtuber</span></p>
+              <div class="evaluation">
+                <i class="icon-star"></i>
+                <p class="grade">4.5</p>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <div class="interview-detail">
+              <div class="inerviewee">
+                <i class="icon-qmark"></i>
+                <p class="inerviewee-img"><img src="image/person01.png"/></p>
+              </div>              
+              <p class="name">John Doe<br/><span class="job">Youtuber</span></p>
+              <div class="evaluation">
+                <i class="icon-star"></i>
+                <p class="grade">4.5</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="swiper-pagination"></div>
 
     </div>
   </div>
